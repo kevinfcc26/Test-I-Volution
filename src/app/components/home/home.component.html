@@ -1,0 +1,18 @@
+<div class="container">
+    <h1 class="text-center mt-4"> Prueba tecnica de I+Volución </h1>
+    <p class="mt-5"> Por favor seleccione un departamento en el recuadro acontinuación para desplegar la lista de municipios que tiene. </p>
+    <div class="mt-5">
+        <form [formGroup]='forma'>
+            <select class="form-select" formControlName="department" >
+                <option *ngFor="let dep of departments" [ngValue]="dep.localizacionId">
+                    {{dep.descripcion | titlecase}} 
+                </option>
+            </select>
+        </form>
+    </div>
+
+    <div *ngIf="flag" class="mt-5">
+        <app-municipality [municipalities]="municipalities"></app-municipality>
+    </div>
+
+</div>

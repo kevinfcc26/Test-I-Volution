@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "ivolution"
+    }
+  },
+  "defaultProject": "ivolution",
+  "cli": {
+    "analytics": "bcc92a32-0569-4f21-b211-298e049b71ad"
+  }
 }

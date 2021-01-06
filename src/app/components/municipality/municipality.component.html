@@ -1,0 +1,14 @@
+<table class="table">
+    <thead class="table-dark">
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Municipio</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let municipality of municipalities">
+        <th scope="row"> {{municipality.localizacionId}} </th>
+        <td>{{municipality.descripcion | titlecase}}</td>
+      </tr>
+    </tbody>
+  </table>

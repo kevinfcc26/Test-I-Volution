@@ -1,0 +1,10 @@
+select {
+    background-color: rgb(33, 37, 41);
+    color: honeydew;
+    border-bottom: rgb(red, green, blue);
+    border-radius: .50rem;
+}
+
+select option {
+    color: honeydew;
+}
